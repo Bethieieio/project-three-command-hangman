@@ -32,8 +32,8 @@ def play(word):
             else: 
                 print("Great Job!", guess, "is the correct word!")
                 guessed_letters.append(guess)
+                word_as_list = list(word_completion)
         elif len(guess) == len(word) and guess.isalpha():
-        
         else:
             print("Woops! Please enter a letter or word! :)")
         print(display_hangman(tries)
