@@ -7,7 +7,6 @@ def get_word():
     word = random.choice(word_list)
     return word.upper()
 
-#displaying word for each turn
 
 #displaying word for each turn, will run until user guesses word or runs out of tries
 def play(word):
@@ -33,6 +32,13 @@ def play(word):
                 print("Great Job!", guess, "is the correct word!")
                 guessed_letters.append(guess)
                 word_as_list = list(word_completion)
+                indices = [i for i, letter in enumerate(word) if letter == guess]
+                for index in indices:
+                    word_as_list[index] = guess
+                word_completion = "".join(word_as_list)
+                if "_" not in word_completion:
+                    guessed = True
+                
         elif len(guess) == len(word) and guess.isalpha():
         else:
             print("Woops! Please enter a letter or word! :)")
