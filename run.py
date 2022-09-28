@@ -38,8 +38,13 @@ def play(word):
                 word_completion = "".join(word_as_list)
                 if "_" not in word_completion:
                     guessed = True
-                
         elif len(guess) == len(word) and guess.isalpha():
+            if guess in guessed_words:
+                print("Oh Dear! You have already guessed the word", guess "Try again!")
+            elif guess =! word:
+                print("Good Try!", guess " is not is not the word!")
+                tries -= 1
+                guessed_words.append(guess)
         else:
             print("Woops! Please enter a letter or word! :)")
         print(display_hangman(tries)
