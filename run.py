@@ -40,13 +40,21 @@ def play(word):
                     guessed = True
         elif len(guess) == len(word) and guess.isalpha():
             if guess in guessed_words:
-                print("Oh Dear! You have already guessed the word", guess "Try again!")
-            elif guess =! word:
-                print("Good Try!", guess " is not is not the word!")
+                print("Oh Dear! You have already guessed the word", guess)
+            elif guess != word:
+                print(guess, " is not the word!")
                 tries -= 1
                 guessed_words.append(guess)
+            else: 
+                guessed = True
+                word_completion = word
+
         else:
             print("Woops! Please enter a letter or word! :)")
-        print(display_hangman(tries)
+        print(display_hangman(tries))
         print(word_completion)
         print("/n")
+    if guessed:
+        print("Wahoo! You guessed the word! You Win!")
+    else: 
+        print("I'm sorry, you ran our of tries. The correct word was " + word + "Try again!")
