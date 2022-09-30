@@ -71,6 +71,7 @@ def play(word):
             print("Woops! Please enter a letter or word! :)")
         print(display_hangman(tries))
         print(word_completion)
+        print(f"There are {len(word)} letters in this word!")
         print("\n")
     if guessed:
         print("Wahoo! You guessed the word! You Win!")
