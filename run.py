@@ -1,6 +1,7 @@
 from curses.ascii import isalpha
 import random
 from words import word_list
+import colored
 
 #fetches random word from words.py and returns it in capital letters
 def get_word():
@@ -15,7 +16,7 @@ def play(word):
     guessed_letters = []
     guessed_words = []
     tries = 6
-    print(""" Welcome to
+    print(""" %s Welcome to
     __   ___   ____   _____  ___   _        ___      __ __   ____  ____    ____  ___ ___   ____  ____  
    /  ] /   \ |    \ / ___/ /   \ | |      /  _]    |  |  | /    ||    \  /    ||   |   | /    ||    \ 
   /  / |     ||  _  (   \_ |     || |     /  [_     |  |  ||  o  ||  _  ||   __|| _   _ ||  o  ||  _  |
@@ -24,7 +25,7 @@ def play(word):
 \     ||     ||  |  |\    ||     ||     ||     |    |  |  ||  |  ||  |  ||     ||   |   ||  |  ||  |  |
  \____| \___/ |__|__| \___| \___/ |_____||_____|    |__|__||__|__||__|__||___,_||___|___||__|__||__|__|
                                                                                                        
-""")
+%s """ % (colored.fg(1), colored.attr("reset")))
     print(display_hangman(tries))
     print(word_completion)
     print(" \n ")
@@ -131,7 +132,7 @@ def display_hangman(tries):
                    -
                 """,
                 # initial empty state
-                """
+                """%s
                    --------
                    |      |
                    |
@@ -139,7 +140,7 @@ def display_hangman(tries):
                    |
                    |
                    -
-                """
+                %s""" %(colored.fg(202), colored.attr("reset"))
     ]
     return stages[tries]
 
