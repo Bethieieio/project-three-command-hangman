@@ -1,3 +1,4 @@
+from cgitb import reset
 from curses.ascii import isalpha
 import random
 from words import word_list
@@ -16,7 +17,7 @@ def play(word):
     guessed_letters = []
     guessed_words = []
     tries = 6
-    print(""" %s Welcome to
+    print(f"""{colored.fg(124)} Welcome to
     __   ___   ____   _____  ___   _        ___      __ __   ____  ____    ____  ___ ___   ____  ____  
    /  ] /   \ |    \ / ___/ /   \ | |      /  _]    |  |  | /    ||    \  /    ||   |   | /    ||    \ 
   /  / |     ||  _  (   \_ |     || |     /  [_     |  |  ||  o  ||  _  ||   __|| _   _ ||  o  ||  _  |
@@ -25,7 +26,7 @@ def play(word):
 \     ||     ||  |  |\    ||     ||     ||     |    |  |  ||  |  ||  |  ||     ||   |   ||  |  ||  |  |
  \____| \___/ |__|__| \___| \___/ |_____||_____|    |__|__||__|__||__|__||___,_||___|___||__|__||__|__|
                                                                                                        
-%s """ % (colored.fg(1), colored.attr("reset")))
+{colored.attr('reset')}""")
     print(display_hangman(tries))
     print(word_completion)
     print(" \n ")
@@ -72,17 +73,24 @@ def play(word):
 
 def display_hangman(tries):
     stages = [  # final state: head, torso, both arms, and both legs
-                """
-                   --------
-                   |      |
-                   |      O
-                   |     \|/
-                   |      |
-                   |     / \.
-                   -
-                """,
+                f"""{colored.bg(15)}{colored.fg(88)}
+
+                    --------                 ▄████  ▄▄▄       ███▄ ▄███▓▓█████     ▒█████   ██▒   █▓▓█████  ██▀███  
+                    |      |                ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀    ▒██▒  ██▒▓██░   █▒▓█   ▀ ▓██ ▒ ██▒
+                    |      O               ▒██░▄▄▄░▒██  ▀█▄  ▓██    ▓██░▒███      ▒██░  ██▒ ▓██  █▒░▒███   ▓██ ░▄█ ▒
+                    |     \|/              ░▓█  ██▓░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄    ▒██   ██░  ▒██ █░░▒▓█  ▄ ▒██▀▀█▄  
+                    |      |               ░▒▓███▀▒ ▓█   ▓██▒▒██▒   ░██▒░▒████▒   ░ ████▓▒░   ▒▀█░  ░▒████▒░██▓ ▒██▒
+                    |     / \.             ░▒   ▒  ▒▒   ▓▒█░░ ▒░   ░  ░░░ ▒░ ░   ░ ▒░▒░▒░    ░ ▐░  ░░ ▒░ ░░ ▒▓ ░▒▓░
+                    -                      ░   ░   ▒   ▒▒ ░░  ░      ░ ░ ░  ░     ░ ▒ ▒░    ░ ░░   ░ ░  ░  ░▒ ░ ▒░
+                                          ░ ░   ░   ░   ▒   ░      ░      ░      ░ ░ ░ ▒       ░░     ░     ░░   ░ 
+                                          ░       ░  ░       ░      ░  ░       ░ ░        ░     ░  ░   ░     
+                                                                                                ░                   
+                                
+
+
+                {colored.attr('reset')}""",
                 # head, torso, both arms, and one leg
-                """
+                f"""{colored.fg(213)}
                    --------
                    |      |
                    |      O
@@ -90,9 +98,9 @@ def display_hangman(tries):
                    |      |
                    |     /
                    -
-                """,
+                {colored.attr('reset')}""",
                 # head, torso, and both arms
-                """
+                f"""{colored.fg(91)}
                    --------
                    |      |
                    |      O
@@ -100,9 +108,9 @@ def display_hangman(tries):
                    |      |
                    |
                    -
-                """,
+                {colored.attr('reset')}""",
                 # head, torso, and one arm
-                """
+                f"""{colored.fg(4)}
                    --------
                    |      |
                    |      O
@@ -110,9 +118,9 @@ def display_hangman(tries):
                    |      |
                    |
                    -
-                """,
+                {colored.attr('reset')}""",
                 # head and torso
-                """
+                f"""{colored.fg(2)}
                    --------
                    |      |
                    |      O
@@ -120,9 +128,9 @@ def display_hangman(tries):
                    |      |
                    |
                    -
-                """,
+                {colored.attr('reset')}""",
                 # head
-                """
+                f"""{colored.fg(226)}
                    --------
                    |      |
                    |      O
@@ -130,9 +138,9 @@ def display_hangman(tries):
                    |
                    |
                    -
-                """,
+                {colored.attr('reset')}""",
                 # initial empty state
-                """%s
+                f"""{colored.fg(202)}
                    --------
                    |      |
                    |
@@ -140,7 +148,7 @@ def display_hangman(tries):
                    |
                    |
                    -
-                %s""" %(colored.fg(202), colored.attr("reset"))
+                {colored.attr('reset')}""",
     ]
     return stages[tries]
 
