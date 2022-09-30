@@ -75,7 +75,7 @@ def play(word):
     if guessed:
         print("Wahoo! You guessed the word! You Win!")
     else:
-        print("I'm sorry, you ran our of tries. The correct word was " + word + "Maybe next time!")
+        print("I'm sorry, you ran our of tries. The correct word was " + word + "\n Maybe next time!")
 
 
 def display_hangman(tries):
