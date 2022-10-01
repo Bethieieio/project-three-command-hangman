@@ -33,7 +33,8 @@ The user types in their inputs in the console and presses enter to submit them.
 
 ## Game Walkthrough
 - The start image title is from the Ascii graffiti generator [PatorJK](http://patorjk.com/software/taag/#p=testall&f=Stop&t=Console%20Hangman). I made sure the style was readable as some types of graffiti are difficult to read.
-![image](assets/images/enter-word.png)
+.
+![image](assets/images/start.png)
 
 - The game asks the user to input a letter or word to start the game. The gallows and the word length are visable above the text
 ![image](assets/images/enter-word.png)
@@ -41,5 +42,9 @@ The user types in their inputs in the console and presses enter to submit them.
 - The user chose the lettet 'a'. The game tells the user that the letter 'a' is not in the word. Below this is the gallow changed colour and the stock figure head has appeared on the gallows. This means that the 6 tries that the user has started with, has gone done to 5. The game also tells the user that the word they are trying to guess contains 8 letters.
 ![image](assets/images/first-fail.png)
 
-- 
+- The user than chose the letter 'e'. As soon as they submitted the letter into the game, the game told them that their chosen letter was part of the word. It congratulates the player and adds the letter to the word. The gallows ares still yellow and no extra features have been added. Indicating that the user still has 5 tries left.
+![image](assets/images/first-correct.png)
+
+- Next, the user chose the letter 'o'. This letter is also in the mystery word. The game adds the correct letter to the word. As you can see the word contains two o's. The user still has 5 tries left.
+![image](assets/images/second-correct.png)
 
