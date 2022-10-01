@@ -33,13 +33,13 @@ The user types in their inputs in the console and presses enter to submit them.
 
 ## Game Walkthrough
 - The start image title is from the Ascii graffiti generator [PatorJK](http://patorjk.com/software/taag/#p=testall&f=Stop&t=Console%20Hangman). I made sure the style was readable as some types of graffiti are difficult to read.
-[!image](assets/images/enter-word.png)
+![image](assets/images/enter-word.png)
 
 - The game asks the user to input a letter or word to start the game. The gallows and the word length are visable above the text
-[!image](assets/images/enter-word.png)
+![image](assets/images/enter-word.png)
 
 - The user chose the lettet 'a'. The game tells the user that the letter 'a' is not in the word. Below this is the gallow changed colour and the stock figure head has appeared on the gallows. This means that the 6 tries that the user has started with, has gone done to 5. The game also tells the user that the word they are trying to guess contains 8 letters.
-[!image](assets/images/first-fail.png)
+![image](assets/images/first-fail.png)
 
 - 
 
