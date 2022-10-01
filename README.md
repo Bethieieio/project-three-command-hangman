@@ -1,31 +1,23 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Console Hangman
 
-Welcome USER_NAME,
+## Introduction
+Console hangman is the classic game of hangman but it is played in the console.
+The aim is to guess the word in six tries. If the user guesses the word is less than 6 tries, they win the game. If the user does not guess the word, it is game over. The user is then asked if they would like to play again.
+Each failed guess more and more features of a stick figure would appear on the gallows until it is complete.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+ The game can be found [here](https://console-hangman.herokuapp.com/)
 
-## Reminders
+ ## Planning Stage 
+ ### Target Audience 
+ - This game is for people any age
+ - English speakers
+ - English students
+ - Users who want to kill a little time by completing a word game instead of being on social media.
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+ ### User Stories
+- As a user, I would like to know how to play the game.
+- As a user, I would like to know the answer at the end of the game if i get it incorrect.
+- As a user, I would like to know how many letters there are in the word I have to guess.
+- As a user, I would like to play the game as many times as I want.
 
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
+### Site Aims
