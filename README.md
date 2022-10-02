@@ -39,12 +39,20 @@ The user types in their inputs in the console and presses enter to submit them.
 - The game asks the user to input a letter or word to start the game. The gallows and the word length are visable above the text
 ![image](assets/images/enter-word.png)
 
-- The user chose the lettet 'a'. The game tells the user that the letter 'a' is not in the word. Below this is the gallow changed colour and the stock figure head has appeared on the gallows. This means that the 6 tries that the user has started with, has gone done to 5. The game also tells the user that the word they are trying to guess contains 8 letters.
+- The user chose the lettet 'a'. The game tells the user that the letter 'a' is not in the word. Below this is the gallow changed colour and the stock figure head has appeared on the gallows. This means that the 6 wrong tries that the user has started with, has gone done to 5. The game also tells the user that the word they are trying to guess contains 8 letters.
 ![image](assets/images/first-fail.png)
 
-- The user than chose the letter 'e'. As soon as they submitted the letter into the game, the game told them that their chosen letter was part of the word. It congratulates the player and adds the letter to the word. The gallows ares still yellow and no extra features have been added. Indicating that the user still has 5 tries left.
+- The user than chose the letter 'e'. As soon as they submitted the letter into the game, the game told them that their chosen letter was part of the word. It congratulates the player and adds the letter to the word. The gallows ares still yellow and no extra features have been added. Indicating that the user still has 5 wrong tries left.
 ![image](assets/images/first-correct.png)
 
-- Next, the user chose the letter 'o'. This letter is also in the mystery word. The game adds the correct letter to the word. As you can see the word contains two o's. The user still has 5 tries left.
+- Next, the user chose the letter 'o'. This letter is also in the mystery word. The game adds the correct letter to the word. As you can see the word contains two o's. The user still has 5 wrong tries left.
 ![image](assets/images/second-correct.png)
+
+- The player gets the next two guesses wrong, the gallows change colour twice and a torso and one arm are added to the stick figure, indicating that the user has lost 2 tries. They now have three wrong tries left.
+![image](assets/images/second-third-fail.png)
+
+- The player guessed three correct letters in a row. 'r', 'm' and 'c'. There are added to the mustery word. The player still has three worng tries left.
+![image](assets/images/third-correct..png)
+![image](assets/images/forth-correct.png)
+![image](assets/images/fifth-correct.png)
 
