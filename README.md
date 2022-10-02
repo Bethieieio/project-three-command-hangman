@@ -39,26 +39,29 @@ The user types in their inputs in the console and presses enter to submit them.
 - The game asks the user to input a letter or word to start the game. The gallows and the word length are visable above the text
 ![image](assets/images/enter-word.png)
 
-- The user chose the lettet 'a'. The game tells the user that the letter 'a' is not in the word. Below this is the gallow changed colour and the stock figure head has appeared on the gallows. This means that the 6 wrong tries that the user has started with, has gone done to 5. The game also tells the user that the word they are trying to guess contains 8 letters.
+- The user chose the lettet 'a'. The game tells the user that the letter 'a' is not in the word. Below this is the gallow changed colour and the stock figure head has appeared on the gallows. This means that the 5 wrong tries that the user has started with, has gone done to 4. The game also tells the user that the word they are trying to guess contains 8 letters.
 ![image](assets/images/first-fail.png)
 
-- The user than chose the letter 'e'. As soon as they submitted the letter into the game, the game told them that their chosen letter was part of the word. It congratulates the player and adds the letter to the word. The gallows ares still yellow and no extra features have been added. Indicating that the user still has 5 wrong tries left.
+- The user than chose the letter 'e'. As soon as they submitted the letter into the game, the game told them that their chosen letter was part of the word. It congratulates the player and adds the letter to the word. The gallows ares still yellow and no extra features have been added. Indicating that the user still has 4 wrong tries left.
 ![image](assets/images/first-correct.png)
 
-- Next, the user chose the letter 'o'. This letter is also in the mystery word. The game adds the correct letter to the word. As you can see the word contains two o's. The user still has 5 wrong tries left.
+- Next, the user chose the letter 'o'. This letter is also in the mystery word. The game adds the correct letter to the word. As you can see the word contains two o's. The user still has 4 wrong tries left.
 ![image](assets/images/second-correct.png)
 
-- The player gets the next two guesses wrong, the gallows change colour twice and a torso and one arm are added to the stick figure, indicating that the user has lost 2 tries. They now have three wrong tries left.
+- The player gets the next two guesses wrong, the gallows change colour twice and a torso and one arm are added to the stick figure, indicating that the user has lost 2 tries. They now have two wrong tries left.
 ![image](assets/images/second-third-fail.png)
 
-- The player guessed three correct letters in a row. 'r', 'm' and 'c'. There are added to the mustery word. The player still has three worng tries left.
+- The player guessed three correct letters in a row. 'r', 'm' and 'c'. There are added to the mustery word. The player still has two worng tries left.
 ![image](assets/images/third-correct..png)
 ![image](assets/images/forth-correct.png)
 ![image](assets/images/fifth-correct.png)
 
-- The user then chose another word, but this time, they forgot they are already chosen that letter. The game tells them that the letter has already been guessed before. This try does not count as an incorrect try. The user still has 3 wrong tries left.
+- The user then chose another word, but this time, they forgot they are already chosen that letter. The game tells them that the letter has already been guessed before. This try does not count as an incorrect try. The user still has 2 wrong tries left.
 ![image](assets/images/repeated-letter.png)
 
 - The user then tried their luck and went to guess the word. They input the word 'composer'. As soon as the user pressed enter, the game told them that they had entered the correcr answer and that they have won the game! A graffiti text of 'Well Done' also indicates this. The user is then asked if they would like to play again. Pressing 'Y' for yes starts the game again. While pressing 'N' ends the game.
 ![image](assets/images/game-won.png)
 
+- The user played the game again. But this time, they did not manage to guess the word and ran out of tries.
+All of the stick figure's limbs were added and a bloody graffiti text appears that says 'Game Over'. The game also tells the user what the mystery word was, then asks the user if they wish to play again.
+![image](assets/images/game-over.png)
