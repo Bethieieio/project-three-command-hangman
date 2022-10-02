@@ -78,7 +78,7 @@ All of the stick figure's limbs were added and a bloody graffiti text appears th
 
 - Next, I saw that some red squiggles under a function. It was not spaced properly and it had be clear of the code above it by two spaces. I corrected this.
 ![image](assets/images/function-error.png)
-![image](assets/images/line-too-long-fix.png)
+![image](assets/images/function-error-fix.png0
 
 ### Bugs
 
