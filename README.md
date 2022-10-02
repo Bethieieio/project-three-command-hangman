@@ -56,3 +56,9 @@ The user types in their inputs in the console and presses enter to submit them.
 ![image](assets/images/forth-correct.png)
 ![image](assets/images/fifth-correct.png)
 
+- The user then chose another word, but this time, they forgot they are already chosen that letter. The game tells them that the letter has already been guessed before. This try does not count as an incorrect try. The user still has 3 wrong tries left.
+![image](assets/images/repeated-letter.png)
+
+- The user then tried their luck and went to guess the word. They input the word 'composer'. As soon as the user pressed enter, the game told them that they had entered the correcr answer and that they have won the game! A graffiti text of 'Well Done' also indicates this. The user is then asked if they would like to play again. Pressing 'Y' for yes starts the game again. While pressing 'N' ends the game.
+![image](assets/images/game-won.png)
+
