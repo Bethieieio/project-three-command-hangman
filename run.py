@@ -4,13 +4,15 @@ import random
 from words import word_list
 import colored
 
-#fetches random word from words.py and returns it in capital letters
+
+# fetches random word from words.py and returns it in capital letters
 def get_word():
     word = random.choice(word_list)
     return word.upper()
 
 
-#displaying word for each turn, will run until user guesses word or runs out of tries
+# displaying word for each turn, will run until user guesses word or runs
+# out of tries
 def play(word):
     word_completion = "_" * len(word)
     guessed = False
@@ -32,7 +34,7 @@ def play(word):
 |  |  ||  _  ||  |  ||  |_ ||   |   ||  _  ||  |  |
 |  |  ||  |  ||  |  ||     ||   |   ||  |  ||  |  |
 |__|__||__|__||__|__||___,_||___|___||__|__||__|__|
-                                                                                                       
+
 {colored.attr('reset')}""")
     print(display_hangman(tries))
     print(word_completion)
@@ -41,7 +43,7 @@ def play(word):
         guess = input("Please guess a letter or word: ").upper()
         if len(guess) == 1 and guess.isalpha():
             if guess in guessed_letters:
-                print("Whoops! You have already guessed this letter! Try again!")
+                print("Whoops! You have already guessed this letter")
             elif guess not in word:
                 print(guess, "is not in the word! Try again!")
                 tries -= 1
@@ -76,7 +78,9 @@ def play(word):
     if guessed:
         print("Wahoo! You guessed the word! You Win!")
     else:
-        print("I'm sorry, you ran our of tries. The correct word was " + word + "\n Maybe next time!")
+        print(
+            "I'm sorry, you ran our of tries. The correct word was " + word + 
+            "\n Maybe next time!")
 
 
 def display_hangman(tries):
@@ -167,12 +171,14 @@ def display_hangman(tries):
     ]
     return stages[tries]
 
+
 def main():
     word = get_word()
     play(word)
     while input("Play Again? Y/N ").upper() == "Y":
         word = get_word()
         play(word)
+
 
 if __name__ == "__main__":
     main()

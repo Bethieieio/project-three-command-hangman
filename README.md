@@ -69,6 +69,16 @@ All of the stick figure's limbs were added and a bloody graffiti text appears th
 ![image](assets/images/game-over.png)
 
 ## Testing
+### Pep8 Testing
+- I tested my code using a package called [Pycodestyle](https://pypi.org/project/pycodestyle/) as [pep8online](http://pep8online.com/) was down. I only had a few minor things that needed sorting out.
+
+- Lines were too long. The validator thought my lines of Python were too long. To fix this, I just added the excess code to another line.
+![image](assets/images/line-too-long.png)
+![image](assets/images/line-too-long-fix.png)
+
+- Next, I saw that some red squiggles under a function. It was not spaced properly and it had be clear of the code above it by two spaces. I corrected this.
+![image](assets/images/function-error.png)
+![image](assets/images/line-too-long-fix.png)
 
 ### Bugs
 
