@@ -30,6 +30,7 @@ The game can be found [here](https://console-hangman.herokuapp.com/)
 The game is layed out on a mock terminal on a webpage deployed on [Heroku](https://www.heroku.com/) and is connected through [GitHub](https://github.com)
 The user types in their inputs in the console and presses enter to submit them. 
 
+## Float Chart
 
 ## Game Walkthrough
 - The start image title is from the Ascii graffiti generator [PatorJK](http://patorjk.com/software/taag/#p=testall&f=Stop&t=Console%20Hangman). I made sure the style was readable as some types of graffiti are difficult to read.
@@ -59,9 +60,20 @@ The user types in their inputs in the console and presses enter to submit them.
 - The user then chose another word, but this time, they forgot they are already chosen that letter. The game tells them that the letter has already been guessed before. This try does not count as an incorrect try. The user still has 2 wrong tries left.
 ![image](assets/images/repeated-letter.png)
 
-- The user then tried their luck and went to guess the word. They input the word 'composer'. As soon as the user pressed enter, the game told them that they had entered the correcr answer and that they have won the game! A graffiti text of 'Well Done' also indicates this. The user is then asked if they would like to play again. Pressing 'Y' for yes starts the game again. While pressing 'N' ends the game.
+- The user then tried their luck and went to guess the word. They input the word 'composer'. As soon as the user pressed enter, the game told them that they had entered the correcr answer and that they have won the game! A graffiti text of 'Well Done' also indicates this. The user is then asked if they would like to play again. Pressing 'Y' for yes starts the game again. While pressing 'N' ends the game..
+
 ![image](assets/images/game-won.png)
 
 - The user played the game again. But this time, they did not manage to guess the word and ran out of tries.
 All of the stick figure's limbs were added and a bloody graffiti text appears that says 'Game Over'. The game also tells the user what the mystery word was, then asks the user if they wish to play again.
 ![image](assets/images/game-over.png)
+
+## Testing
+
+### Bugs
+
+## Techologies 
+
+## Deployment
+
+## Credits and References
