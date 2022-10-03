@@ -88,16 +88,19 @@ All of the stick figure's limbs were added and a bloody graffiti text appears th
 ## Techologies 
 ### Languages
 - [Python](https://www.python.org/): Everythong for this project is in Python.
-- [Markdown](https://www.markdownguide.org): This read me is in Markdown
+- [Markdown](https://www.markdownguide.org/basic-syntax/): This read me is in Markdown
 
 ### Developer Environment
-[GitHub](https://github.com/): Code hosting platform 
-[Visual Studio Code](https://code.visualstudio.com/): This project was written in VS Code
-[Heroku](heroku.com): Cloud platform, deploys the app
+- [GitHub](https://github.com/): Code hosting platform 
+- [Visual Studio Code](https://code.visualstudio.com/): This project was written in VS Code
+- [Heroku](heroku.com): Cloud platform, deploys the app
 
 ### Packages
-[PypiColored](https://pypi.org/project/colored/) To create the colours for the gallows and graffiti text 
-[PypiPep8](https://pypi.org/project/pep8/) To test the Python code I wrote for any errors / i
+- [PypiColored](https://pypi.org/project/colored/) To create the colours for the gallows and graffiti text 
+- [PypiPep8](https://pypi.org/project/pep8/) To test the Python code I wrote for any errors / imperfections.
+
+### Other
+- [Graffiti](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20) For the 'Well Done' and 'Game Over' text, I used Patorjk.
 ## Deployment
 
 ## Credits and References
