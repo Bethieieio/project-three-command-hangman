@@ -72,7 +72,7 @@ All of the stick figure's limbs were added and a bloody graffiti text appears th
 ### Pep8 Testing
 - I tested my code using a package called [Pycodestyle](https://pypi.org/project/pycodestyle/) as [pep8online](http://pep8online.com/) was down. I only had a few minor things that needed sorting out.
 
-- Lines were too long. The validator thought my lines of Python were too long. To fix this, I just added the excess code to another line.
+- I had some lines were too long. The validator thought my lines of Python were too long. To fix this, I just added the excess code to another line.
 ![image](assets/images/line-too-long.png)
 ![image](assets/images/line-too-long-fix.png)
 
@@ -80,10 +80,24 @@ All of the stick figure's limbs were added and a bloody graffiti text appears th
 ![image](assets/images/function-error.png)
 ![image](assets/images/function-error-fix.png)
 
+### Manual Testing
+
+
 ### Bugs
 
 ## Techologies 
+### Languages
+- [Python](https://www.python.org/): Everythong for this project is in Python.
+- [Markdown](https://www.markdownguide.org): This read me is in Markdown
 
+### Developer Environment
+[GitHub](https://github.com/): Code hosting platform 
+[Visual Studio Code](https://code.visualstudio.com/): This project was written in VS Code
+[Heroku](heroku.com): Cloud platform, deploys the app
+
+### Packages
+[PypiColored](https://pypi.org/project/colored/) To create the colours for the gallows and graffiti text 
+[PypiPep8](https://pypi.org/project/pep8/) To test the Python code I wrote for any errors / i
 ## Deployment
 
 ## Credits and References
