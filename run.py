@@ -18,7 +18,7 @@ def play(word):
     guessed = False
     guessed_letters = []
     guessed_words = []
-    tries = 6
+    tries = 8
     print(f"""{colored.fg(124)} Welcome to
     __   ___   ____   _____  ___   _        ___
    /  ] /   \ |    \ / ___/ /   \ | |      /  _]
@@ -36,6 +36,26 @@ def play(word):
 |__|__||__|__||__|__||___,_||___|___||__|__||__|__|
 
 {colored.attr('reset')}""")
+
+    difficulty_selected = False
+    while difficulty_selected is False:
+        difficulty = input("""Please enter difficulty E = Easy, M = Medium,
+H = Hard: """).upper() 
+        if difficulty == "E":
+            tries = 8
+            print(tries)
+            difficulty_selected = True
+        elif difficulty == "M":
+            tries = 6
+            print(tries)
+            difficulty_selected = True
+        elif difficulty == "H":
+            tries = 4
+            print(tries)
+            difficulty_selected = True
+        else:
+            print("Please enter difficulty")
+
     print(display_hangman(tries))
     print(word_completion)
     print(" \n ")
@@ -138,13 +158,23 @@ def display_hangman(tries):
                    |
                    -
                 {colored.attr('reset')}""",
-                # head and torso
+                # head, neck and torso 
                 f"""{colored.fg(2)}
                    --------
                    |      |
                    |      O
                    |      |
                    |      |
+                   |
+                   -
+                {colored.attr('reset')}""",
+                # head and neck 
+                f"""{colored.fg(2)}
+                   --------
+                   |      |
+                   |      O
+                   |      |
+                   |      
                    |
                    -
                 {colored.attr('reset')}""",
@@ -158,10 +188,20 @@ def display_hangman(tries):
                    |
                    -
                 {colored.attr('reset')}""",
-                # initial empty state
+                # rope added
                 f"""{colored.fg(202)}
                    --------
                    |      |
+                   |
+                   |
+                   |
+                   |
+                   -
+                {colored.attr('reset')}""",
+                # initial empty state
+                f"""{colored.fg(202)}
+                   --------
+                   |      
                    |
                    |
                    |
