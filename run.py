@@ -39,8 +39,8 @@ def play(word):
 
     difficulty_selected = False
     while difficulty_selected is False:
-        difficulty = input("""Please select difficulty E = Easy, M = Medium,
-H = Hard: """).upper() 
+        difficulty = input("""Please select difficulty:
+E = Easy, M = Medium, H = Hard: """).upper()
         if difficulty == "E":
             tries = 8
             print("You chose Easy difficulty. You have ", tries, "tries.")
@@ -96,26 +96,25 @@ H = Hard: """).upper()
         print(f"There are {len(word)} letters in this word!")
         print("\n")
     if guessed:
-        print(f"""{colored.fg(6)}Wahoo! You guessed the word! You Win! 
-        
+        print(f"""{colored.fg(6)}Wahoo! You guessed the word! You Win!
+
 ██     ██ ███████ ██      ██          
 ██     ██ ██      ██      ██          
 ██  █  ██ █████   ██      ██          
 ██ ███ ██ ██      ██      ██          
  ███ ███  ███████ ███████ ███████     
-                                      
-                                      
+
+
 ██████   ██████  ███    ██ ███████ ██ 
 ██   ██ ██    ██ ████   ██ ██      ██ 
 ██   ██ ██    ██ ██ ██  ██ █████   ██ 
 ██   ██ ██    ██ ██  ██ ██ ██         
 ██████   ██████  ██   ████ ███████ ██ 
-                                      
-                                      
+
 """)
     else:
         print(
-            "I'm sorry, you ran our of tries. The correct word was " + word + 
+            "I'm sorry, you ran our of tries. The correct word was " + word +
             "\n Maybe next time!")
 
 
