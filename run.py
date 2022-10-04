@@ -43,15 +43,15 @@ def play(word):
 H = Hard: """).upper() 
         if difficulty == "E":
             tries = 8
-            print("You have ", tries, "tries")
+            print("You chose Easy difficulty. You have ", tries, "tries")
             difficulty_selected = True
         elif difficulty == "M":
             tries = 6
-            print("You have ", tries, "tries")
+            print("You chose Medium difficulty. You have ", tries, "tries")
             difficulty_selected = True
         elif difficulty == "H":
             tries = 4
-            print("You have ", tries, "tries")
+            print("You chose Hard difficulty have ", tries, "tries")
             difficulty_selected = True
         else:
             print(difficulty, "is not a difficulty")
