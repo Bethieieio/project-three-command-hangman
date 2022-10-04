@@ -39,7 +39,7 @@ def play(word):
 
     difficulty_selected = False
     while difficulty_selected is False:
-        difficulty = input("""Please enter difficulty E = Easy, M = Medium,
+        difficulty = input("""Please select difficulty E = Easy, M = Medium,
 H = Hard: """).upper() 
         if difficulty == "E":
             tries = 8
@@ -51,10 +51,10 @@ H = Hard: """).upper()
             difficulty_selected = True
         elif difficulty == "H":
             tries = 4
-            print(tries)
+            print("You have ", tries, "tries")
             difficulty_selected = True
         else:
-            print("Please enter difficulty")
+            print(difficulty, "is not a difficulty")
 
     print(display_hangman(tries))
     print(word_completion)
