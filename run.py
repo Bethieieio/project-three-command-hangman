@@ -78,9 +78,17 @@ E = Easy, M = Medium, H = Hard: """).upper()
                 word_completion = "".join(word_as_list)
                 if "_" not in word_completion:
                     guessed = True
-        elif len(guess) == len(word) and guess.isalpha():
+        elif guess.isalpha():
             if guess in guessed_words:
                 print("Oh Dear! You have already guessed the word", guess)
+            elif guess == "CHEAT":
+                """               guessed_letters.append(guess)
+                word_as_list = list(word_completion)
+                indices = [i for i, letter in enumerate(word) if letter == guess]
+                for index in indices:
+                    word_as_list[index] = guess
+                word_completion = "".join(word_as_list)
+                print("cheater!")"""
             elif guess != word:
                 print(guess, " is not the word!")
                 tries -= 1
@@ -102,7 +110,7 @@ E = Easy, M = Medium, H = Hard: """).upper()
 ██     ██ ██      ██      ██          
 ██  █  ██ █████   ██      ██          
 ██ ███ ██ ██      ██      ██          
- ███ ███  ███████ ███████ ███████     
+███ ███  ███████ ███████ ███████     
 
 
 ██████   ██████  ███    ██ ███████ ██ 
@@ -174,7 +182,7 @@ def display_hangman(tries):
                    -
                 {colored.attr('reset')}""",
                 # head, neck and torso 
-                f"""{colored.fg(2)}
+                f"""{colored.fg(80)}
                    --------
                    |      |
                    |      O
@@ -214,7 +222,7 @@ def display_hangman(tries):
                    -
                 {colored.attr('reset')}""",
                 # initial empty state
-                f"""{colored.fg(202)}
+                f"""{colored.fg(210)}
                    --------
                    |      
                    |
