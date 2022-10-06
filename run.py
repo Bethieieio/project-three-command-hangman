@@ -1,5 +1,6 @@
 from cgitb import reset
 from curses.ascii import isalpha
+from doctest import COMPARISON_FLAGS
 import random
 from words import word_list
 import colored
@@ -82,13 +83,23 @@ E = Easy, M = Medium, H = Hard: """).upper()
             if guess in guessed_words:
                 print("Oh Dear! You have already guessed the word", guess)
             elif guess == "CHEAT":
-                """               guessed_letters.append(guess)
+                print("YOU'RE CHEATER! SAY GOODBYE TO A TRY!")
+                cheat_letters = []
+                for letter in list(word):
+                    if letter not in guessed_letters:
+                        cheat_letters.append(letter)
+                random_letter = random.choice(cheat_letters)
+
+                guessed_letters.append(random_letter)
                 word_as_list = list(word_completion)
-                indices = [i for i, letter in enumerate(word) if letter == guess]
+                indices = [i for i, letter in enumerate(word) if letter == random_letter]
                 for index in indices:
-                    word_as_list[index] = guess
+                    word_as_list[index] = random_letter
                 word_completion = "".join(word_as_list)
-                print("cheater!")"""
+                tries -= 1
+                if "_" not in word_completion:
+                    guessed = True
+
             elif guess != word:
                 print(guess, " is not the word!")
                 tries -= 1
