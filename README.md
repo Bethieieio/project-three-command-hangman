@@ -46,10 +46,10 @@ If the user enters a letter that is not a difficulty, the game tell them this.
 
 - The player starts by picking the letter 'A'.
 When she enters the letter, the game tells her that 'A' is in the word and adds it to the mystery word.
-It also tells the user that in this word, there are sevem letters.
+It also tells the user that in this word, there are seven letters.
 ![image](assets/images/first-correct-answer.png)
 
-- The player than inputs her next chosen letter, 'E'. It's not in the word.
+- The player then inputs her next chosen letter, 'E'. It's not in the word.
 The game tells them this and adds the first part on the hangman's gallows, that also change colour for visual effect and to make it obvious that something has been added to it. The user has lost a try.
 ![image](assets/images/first-wrong-answer.png)
 
@@ -75,7 +75,7 @@ The game tells them this and adds the first part on the hangman's gallows, that 
 - The player adds the letter 'N' it is correct.
 ![image](assets/images/fifth-correct-letter.png)
 
-- The player, now panicking she has two wrong tries left, uses all her brain to guess the mystery word from the shown letters! She thought she was so clever guessing the word 'basking' (forgetting she was told earlier that the letter 'B' was not in the word but we will let her off.. she was on her work lunch break enjoying a large vanilla latte). It obviously was not the correct word, so she lost a try. She has only has one wrong answer left before game over. If she wassilly enough to enter the same word again, she would not have lost a life. The game would have told her she already guessed that word.
+- The player, now panicking she has two wrong tries left, uses all her brain to guess the mystery word from the shown letters! She thought she was so clever guessing the word 'basking' (forgetting she was told earlier that the letter 'B' was not in the word but we will let her off.. she was on her work lunch break enjoying a large vanilla latte). It obviously was not the correct word, so she lost a try. She has only has one wrong answer left before game over. If she was silly enough to enter the same word again, she would not have lost a life. The game would have told her she already guessed that word.
 ![image](assets/images/wrong-word.png)
 
 - The player guessed the word 'masking'. It was the correct word!! (Wahoo!) The game shows the completed word and tells the player well done in a graffiti font. The game asks if the player would like to play again. The player can enter 'Y' for yes and the game starts all over again with aanother random word and 'N' for No which ends the game.
