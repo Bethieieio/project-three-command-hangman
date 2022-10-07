@@ -33,6 +33,47 @@ The user types in their inputs in the console and presses enter to submit them.
 ## Float Chart
 
 ## Game Walkthrough
+
+- The start image title is from the Ascii graffiti generator [PatorJK](http://patorjk.com/software/taag/#p=testall&f=Stop&t=Console%20Hangman). I made sure the style was readable as some types of graffiti are difficult to read.
+![image](assets/images/start.png)
+
+- The games asks the user to select a difficulty. The user selects the difficulty by entering E (Easy), M (Medium) or H (Hard).
+The difficulties have the same words to guess but with a different number of tries, 8, 6, 4 respectively.
+Our user picked easy, because she is not very good at playing hangman...
+If the user enters a letter that is not a difficulty, the game tell them this.
+![image](assets/images/select_difficulty.png)
+![image](assets/images/wrong_difficulty.png)
+
+- The player starts by picking the letter 'A'.
+When she enters the letter, the game tells her that 'A' is in the word and adds it to the mystery word.
+It also tells the user that in this word, there are sevem letters.
+![image](assets/images/first-correct-answer.png)
+
+- The player than inputs her next chosen letter, 'E'. It's not in the word.
+The game tells them this and adds the first part on the hangman's gallows, that also change colour for visual effect and to make it obvious that something has been added to it. The user has lost a try.
+![image](assets/images/first-wrong-answer.png)
+
+- The player then guesses two correct answers, 'I' and 'S'. These are added to the word and no tries are lost.
+![image](assets/images/second-correct-answer.png)
+![image](assets/images/third-correct-answer.png)
+
+- The player got the next 3 letters incorrect . The letters 'P', 'B' and 'L'are not in the word and three more tries are lost, adding more parts to the hangman and changing it's colour each time.
+![image](assets/images/secoond-wrong-answer.png)
+![image](assets/images/third-wrong-answer.png)
+![image](assets/images/forth-wrong-answer.png)
+
+
+- The user tried entering 'S' again, but forgot that they already inputed in this letter. They player does not lose a life, but the game tells them that they have repeated the letter.
+
+
+
+
+
+
+
+
+
+
 - The start image title is from the Ascii graffiti generator [PatorJK](http://patorjk.com/software/taag/#p=testall&f=Stop&t=Console%20Hangman). I made sure the style was readable as some types of graffiti are difficult to read.
 .
 ![image](assets/images/start.png)
