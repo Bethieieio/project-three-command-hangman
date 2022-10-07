@@ -64,45 +64,22 @@ The game tells them this and adds the first part on the hangman's gallows, that 
 
 
 - The user tried entering 'S' again, but forgot that they already inputed in this letter. They player does not lose a life, but the game tells them that they have repeated the letter.
-
-
-
-
-
-
-
-
-
-
-- The start image title is from the Ascii graffiti generator [PatorJK](http://patorjk.com/software/taag/#p=testall&f=Stop&t=Console%20Hangman). I made sure the style was readable as some types of graffiti are difficult to read.
-.
-![image](assets/images/start.png)
-
-- The game asks the user to input a letter or word to start the game. The gallows and the word length are visable above the text
-![image](assets/images/enter-word.png)
-
-- The user chose the lettet 'a'. The game tells the user that the letter 'a' is not in the word. Below this is the gallow changed colour and the stock figure head has appeared on the gallows. This means that the 5 wrong tries that the user has started with, has gone done to 4. The game also tells the user that the word they are trying to guess contains 8 letters.
-![image](assets/images/first-fail.png)
-
-- The user than chose the letter 'e'. As soon as they submitted the letter into the game, the game told them that their chosen letter was part of the word. It congratulates the player and adds the letter to the word. The gallows ares still yellow and no extra features have been added. Indicating that the user still has 4 wrong tries left.
-![image](assets/images/first-correct.png)
-
-- Next, the user chose the letter 'o'. This letter is also in the mystery word. The game adds the correct letter to the word. As you can see the word contains two o's. The user still has 4 wrong tries left.
-![image](assets/images/second-correct.png)
-
-- The player gets the next two guesses wrong, the gallows change colour twice and a torso and one arm are added to the stick figure, indicating that the user has lost 2 tries. They now have two wrong tries left.
-![image](assets/images/second-third-fail.png)
-
-- The player guessed three correct letters in a row. 'r', 'm' and 'c'. There are added to the mustery word. The player still has two worng tries left.
-![image](assets/images/third-correct..png)
-![image](assets/images/forth-correct.png)
-![image](assets/images/fifth-correct.png)
-
-- The user then chose another word, but this time, they forgot they are already chosen that letter. The game tells them that the letter has already been guessed before. This try does not count as an incorrect try. The user still has 2 wrong tries left.
 ![image](assets/images/repeated-letter.png)
 
-- The user then tried their luck and went to guess the word. They input the word 'composer'. As soon as the user pressed enter, the game told them that they had entered the correcr answer and that they have won the game! A graffiti text of 'Well Done' also indicates this. The user is then asked if they would like to play again. Pressing 'Y' for yes starts the game again. While pressing 'N' ends the game..
+- The user guessed the letter 'W but it was wrong! They are running out of lives? Will they win?
+![image](assets/images/fifth-wrong-letter.png)
 
+- The player has the option to cheat! But it costs one try each time they do this. To enter cheat as a word, a random unchosen letter appears in the mystery word and the a try is taken. The game tells the player that they are a cheater! 
+![image](assets/images/cheater.png)
+
+- The player adds the letter 'N' it is correct.
+![image](assets/images/fifth-correct-letter.png)
+
+- The player, now panicking she has two wrong tries left, uses all her brain to guess the mystery word from the shown letters! She thought she was so clever guessing the word 'basking' (forgetting she was told earlier that the letter 'B' was not in the word but we will let her off.. she was on her work lunch break enjoying a large vanilla latte). It obviously was not the correct word, so she lost a try. She has only has one wrong answer left before game over. If she wassilly enough to enter the same word again, she would not have lost a life. The game would have told her she already guessed that word.
+![image](assets/images/wrong-word.png)
+
+- The player guessed the word 'masking'. It was the correct word!! (Wahoo!) The game shows the completed word and tells the player well done in a graffiti font. The game asks if the player would like to play again. The player can enter 'Y' for yes and the game starts all over again with aanother random word and 'N' for No which ends the game.
+![image](assets/images/correct-word.png)
 ![image](assets/images/game-won.png)
 
 - The user played the game again. But this time, they did not manage to guess the word and ran out of tries.
