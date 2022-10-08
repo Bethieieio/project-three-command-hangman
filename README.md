@@ -100,7 +100,6 @@ All of the stick figure's limbs were added and a bloody graffiti text appears th
 
 ### Manual Testing
 
-
 ### Bugs
 
 ## Techologies 
@@ -120,5 +119,17 @@ All of the stick figure's limbs were added and a bloody graffiti text appears th
 ### Other
 - [Graffiti](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20) For the 'Well Done' and 'Game Over' text, I used Patorjk.
 ## Deployment
+- I had commited and pushed everything required for the game to work to GitHub.
+- I then went to [Heroku]((heroku.com)) and created an account.
+- I click on 'New' on the top left of the site and clicked 'Create New App'.
+- I chose the Europe region and created a name for the app. I chose Console-Hangman
+- I went to the settings page and sorted out Buildpacks for everythong to work. I inouted the Python and Node buildpacks like so:
+![image](assets/images/buildpack.png)
+- I also input a config var for PORT = 8000.
+![image](assets/images/buildpack.png) 
+- I clicked on the deploy page and link my GitHub repository with the Heroku app.
+- I scrolled tpo the bottom of the page and deployed the branch, looking at all the steps the computer went through to see iof any errors occured.
+- I then enabled automatic deploys so every time edited the code and pushed to GitHub, Heroku redeployed the updates automatically.
+- I then opened the game on Heroku to check for any errors that may have occured.
 
 ## Credits and References
