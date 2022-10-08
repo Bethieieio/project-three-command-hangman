@@ -133,3 +133,5 @@ All of the stick figure's limbs were added and a bloody graffiti text appears th
 - I then opened the game on Heroku to check for any errors that may have occured.
 
 ## Credits and References
+- I watched this YouTube video from a channel called [Kite](https://www.youtube.com/watch?v=m4nEnsavl6w) to help me get the basics of what I needed for the game of hangman to work, pausing it every so often and printing things to understand more of what what happening and why.
+- [Hangman Steps and Words](https://github.com/kiteco/python-youtube-code/blob/master/build-hangman-in-python/hangman.py) I used Kites repository to use their hangman steps because I know nothing about making a drawing out of symbols and adapted it to make it look better more like a stick figure. I also used their words as I felt they had a good mixture of easy, difficult, long and short words.
