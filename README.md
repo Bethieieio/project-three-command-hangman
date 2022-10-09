@@ -31,7 +31,7 @@ The game is layed out on a mock terminal on a webpage deployed on [Heroku](https
 The user types in their inputs in the console and presses enter to submit them. 
 
 ## Float Chart
-
+![image](assets/images/flow-diagram.png)
 ## Game Walkthrough
 
 - The start image title is from the Ascii graffiti generator [PatorJK](http://patorjk.com/software/taag/#p=testall&f=Stop&t=Console%20Hangman). I made sure the style was readable as some types of graffiti are difficult to read.
