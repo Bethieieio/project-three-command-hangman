@@ -75,7 +75,7 @@ The game tells them this and adds the first part on the hangman's gallows, that 
 - The player adds the letter 'N' it is correct.
 ![image](assets/images/fifth-correct-letter.png)
 
-- The player, now panicking she has two wrong tries left, uses all her brain to guess the mystery word from the shown letters! She thought she was so clever guessing the word 'basking' (forgetting she was told earlier that the letter 'B' was not in the word but we will let her off.. she was on her work lunch break enjoying a large vanilla latte). It obviously was not the correct word, so she lost a try. She has only has one wrong answer left before game over. If she was silly enough to enter the same word again, she would not have lost a life. The game would have told her she already guessed that word.
+- The player, now panicking she has two wrong tries left, uses all her brain to guess the mystery word from the shown letters! She thought she was so clever guessing the word 'basking' (forgetting she was told earlier that the letter 'B' was not in the word but we will let her off.. she was on her work lunch break enjoying a large vanilla latte). It obviously was not the correct word, so she lost a try. She has only one wrong answer left before game over. If she was silly enough to enter the same word again, she would not have lost a life. The game would have told her she already guessed that word.
 ![image](assets/images/wrong-word.png)
 
 - The player guessed the word 'masking'. It was the correct word!! (Wahoo!) The game shows the completed word and tells the player well done in a graffiti font. The game asks if the player would like to play again. The player can enter 'Y' for yes and the game starts all over again with aanother random word and 'N' for No which ends the game.
@@ -99,8 +99,11 @@ All of the stick figure's limbs were added and a bloody graffiti text appears th
 ![image](assets/images/function-error-fix.png)
 
 ### Manual Testing
-
+I have played this game many times including the game above in the walkthrough.
+I tested it on my local terminal and on Heroku with no issues.
 ### Bugs
+The only issue I had with my game was that the graffiti title was too long for the game area, so half of it was hidden.
+To solve this, I moved the word 'Hangman' it was below the word 'Console'.
 
 ## Techologies 
 ### Languages
@@ -135,3 +138,5 @@ All of the stick figure's limbs were added and a bloody graffiti text appears th
 ## Credits and References
 - I watched this YouTube video from a channel called [Kite](https://www.youtube.com/watch?v=m4nEnsavl6w) to help me get the basics of what I needed for the game of hangman to work, pausing it every so often and printing things to understand more of what what happening and why.
 - [Hangman Steps and Words](https://github.com/kiteco/python-youtube-code/blob/master/build-hangman-in-python/hangman.py) I used Kites repository to use their hangman steps because I know nothing about making a drawing out of symbols and adapted it to make it look better more like a stick figure. I also used their words as I felt they had a good mixture of easy, difficult, long and short words.
+- Rich my mentor. He is cool.
+- My partner [Ashleigh](https://github.com/bashleigh) for putting up with me and doing her very best to answer all my questions.
