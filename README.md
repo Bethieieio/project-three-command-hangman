@@ -31,7 +31,7 @@ The game is layed out on a mock terminal on a webpage deployed on [Heroku](https
 The user types in their inputs in the console and presses enter to submit them. 
 
 ## Float Chart
-![image](assets/images/flow-diagram.png)
+![image](assets/images/flow-diagram-2.png)
 ## Game Walkthrough
 
 - The start image title is from the Ascii graffiti generator [PatorJK](http://patorjk.com/software/taag/#p=testall&f=Stop&t=Console%20Hangman). I made sure the style was readable as some types of graffiti are difficult to read.
@@ -99,8 +99,13 @@ All of the stick figure's limbs were added and a bloody graffiti text appears th
 ![image](assets/images/function-error-fix.png)
 
 ### Manual Testing
-I have played this game many times including the game above in the walkthrough.
-I tested it on my local terminal and on Heroku with no issues.
+- Implemention: At the start of the game, the user selects the difficulty by entering 'E' for easy, 'M' for medium or 'H' for Hard. These three letters should be the only letters that allows the user to carry on with the game has it tells the game how many tries the user would like.
+- Test: To test this, I input the 'E', 'M' and 'H' individually. I then tried to input other letters and words. I then added numbers and puncuation marks to see if it stopped the user from continuting.
+![image](assets/images/difficulty-test.png)
+![image](assets/images/mayonaise.jpg)
+- Result: Adding anything but 'E', 'M' or 'H' did not continue the game. It tells the user that whatever they inputted is not a difficulty.
+- Verdict: Only the letters 'E', 'M' or 'H' selected the difficulty and continued with the game. So it was a success.
+
 ### Bugs
 The only issue I had with my game was that the graffiti title was too long for the game area, so half of it was hidden.
 To solve this, I moved the word 'Hangman' it was below the word 'Console'.

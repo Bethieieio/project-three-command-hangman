@@ -56,7 +56,7 @@ E = Easy, M = Medium, H = Hard: """).upper()
             difficulty_selected = True
         elif difficulty == "H":
             tries = 4
-            print("You chose Hard difficulty have ", tries, "tries")
+            print("You chose Hard difficulty. You have ", tries, "tries")
             difficulty_selected = True
         else:
             print(difficulty, "is not a difficulty")
@@ -108,10 +108,12 @@ E = Easy, M = Medium, H = Hard: """).upper()
                 if "_" not in word_completion:
                     guessed = True
 
-            elif guess != word:
+            elif guess != word and len(guess) == len(word):
                 print(guess, " is not the word!")
                 tries -= 1
                 guessed_words.append(guess)
+            elif len(guess) != len(word):
+                print("Your guess does not have the right amount of letters!")
             else:
                 guessed = True
                 word_completion = word
