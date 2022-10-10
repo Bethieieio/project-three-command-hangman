@@ -6,15 +6,19 @@ from words import word_list
 import colored
 
 
-# fetches random word from words.py and returns it in capital letters
 def get_word():
+    """
+    Fetches random word from words.py and returns it in capital letters
+    """
     word = random.choice(word_list)
     return word.upper()
 
 
-# displaying word for each turn, will run until user guesses word or runs
-# out of tries
 def play(word):
+    """
+    displaying word for each turn, will run until
+    user guesses word or runs out of tries
+    """
     word_completion = "_" * len(word)
     guessed = False
     guessed_letters = []
