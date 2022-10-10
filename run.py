@@ -73,7 +73,9 @@ E = Easy, M = Medium, H = Hard: """).upper()
                 print("Great Job!", guess, "is a correct letter!")
                 guessed_letters.append(guess)
                 word_as_list = list(word_completion)
-                indices = [i for i, letter in enumerate(word) if letter == guess]
+                indices = [
+                    i for i, letter in enumerate(word)
+                    if letter == guess]
                 for index in indices:
                     word_as_list[index] = guess
                 word_completion = "".join(word_as_list)
@@ -92,7 +94,9 @@ E = Easy, M = Medium, H = Hard: """).upper()
 
                 guessed_letters.append(random_letter)
                 word_as_list = list(word_completion)
-                indices = [i for i, letter in enumerate(word) if letter == random_letter]
+                indices = [
+                    i for i, letter in enumerate(word)
+                    if letter == random_letter]
                 for index in indices:
                     word_as_list[index] = random_letter
                 word_completion = "".join(word_as_list)
@@ -117,18 +121,18 @@ E = Easy, M = Medium, H = Hard: """).upper()
     if guessed:
         print(f"""{colored.fg(6)}Wahoo! You guessed the word! You Win!
 
-██     ██ ███████ ██      ██          
-██     ██ ██      ██      ██          
-██  █  ██ █████   ██      ██          
-██ ███ ██ ██      ██      ██          
- ███ ███  ███████ ███████ ███████     
+██     ██ ███████ ██      ██
+██     ██ ██      ██      ██
+██  █  ██ █████   ██      ██
+██ ███ ██ ██      ██      ██
+ ███ ███  ███████ ███████ ███████
 
 
-██████   ██████  ███    ██ ███████ ██ 
-██   ██ ██    ██ ████   ██ ██      ██ 
-██   ██ ██    ██ ██ ██  ██ █████   ██ 
-██   ██ ██    ██ ██  ██ ██ ██         
-██████   ██████  ██   ████ ███████ ██ 
+██████   ██████  ███    ██ ███████ ██
+██   ██ ██    ██ ████   ██ ██      ██
+██   ██ ██    ██ ██ ██  ██ █████   ██
+██   ██ ██    ██ ██  ██ ██ ██
+██████   ██████  ██   ████ ███████ ██
 
 """)
     else:
@@ -141,24 +145,23 @@ def display_hangman(tries):
     stages = [  # final state: head, torso, both arms, and both legs
                 f"""{colored.bg(15)}{colored.fg(88)}
 
-                    --------                 
-                    |      |               
-                    |      O               
-                    |     \|/              
-                    |      |               
-                    |     / \.             
-                    -              
-    ▄████  ▄▄▄       ███▄ ▄███▓▓█████     ▒█████   ██▒   █▓▓█████  ██▀███  
+                    --------
+                    |      |
+                    |      O
+                    |     \|/
+                    |      |
+                    |     / \.
+                    -
+    ▄████  ▄▄▄       ███▄ ▄███▓▓█████     ▒█████   ██▒   █▓▓█████  ██▀███
    ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀    ▒██▒  ██▒▓██░   █▒▓█   ▀ ▓██ ▒ ██▒
   ▒██░▄▄▄░▒██  ▀█▄  ▓██    ▓██░▒███      ▒██░  ██▒ ▓██  █▒░▒███   ▓██ ░▄█ ▒
-  ░▓█  ██▓░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄    ▒██   ██░  ▒██ █░░▒▓█  ▄ ▒██▀▀█▄  
+  ░▓█  ██▓░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄    ▒██   ██░  ▒██ █░░▒▓█  ▄ ▒██▀▀█▄
   ░▒▓███▀▒ ▓█   ▓██▒▒██▒   ░██▒░▒████▒   ░ ████▓▒░   ▒▀█░  ░▒████▒░██▓ ▒██▒
    ░▒   ▒  ▒▒   ▓▒█░░ ▒░   ░  ░░░ ▒░ ░   ░ ▒░▒░▒░    ░ ▐░  ░░ ▒░ ░░ ▒▓ ░▒▓░
    ░   ░   ▒   ▒▒ ░░  ░      ░ ░ ░  ░     ░ ▒ ▒░    ░ ░░   ░ ░  ░  ░▒ ░ ▒░
-   ░ ░   ░   ░   ▒   ░      ░      ░      ░ ░ ░ ▒       ░░     ░     ░░   ░ 
-    ░       ░  ░       ░      ░  ░       ░ ░        ░     ░  ░   ░     
-                                                      ░                             
-                                
+   ░ ░   ░   ░   ▒   ░      ░      ░      ░ ░ ░ ▒       ░░     ░     ░░   ░
+    ░       ░  ░       ░      ░  ░       ░ ░        ░     ░  ░   ░
+                                                      ░
 
 
                 {colored.attr('reset')}""",
@@ -192,7 +195,7 @@ def display_hangman(tries):
                    |
                    -
                 {colored.attr('reset')}""",
-                # head, neck and torso 
+                # head, neck and torso
                 f"""{colored.fg(80)}
                    --------
                    |      |
@@ -202,13 +205,13 @@ def display_hangman(tries):
                    |
                    -
                 {colored.attr('reset')}""",
-                # head and neck 
+                # head and neck
                 f"""{colored.fg(2)}
                    --------
                    |      |
                    |      O
                    |      |
-                   |      
+                   |
                    |
                    -
                 {colored.attr('reset')}""",
@@ -235,7 +238,7 @@ def display_hangman(tries):
                 # initial empty state
                 f"""{colored.fg(210)}
                    --------
-                   |      
+                   |
                    |
                    |
                    |
