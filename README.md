@@ -99,16 +99,61 @@ All of the stick figure's limbs were added and a bloody graffiti text appears th
 ![image](assets/images/function-error-fix.png)
 
 ### Manual Testing
-- Implemention: At the start of the game, the user selects the difficulty by entering 'E' for easy, 'M' for medium or 'H' for Hard. These three letters should be the only letters that allows the user to carry on with the game has it tells the game how many tries the user would like.
+- Implementation: At the start of the game, the user selects the difficulty by entering 'E' for easy, 'M' for medium or 'H' for Hard. These three letters should be the only letters that allows the user to carry on with the game has it tells the game how many tries the user would like.
 - Test: To test this, I input the 'E', 'M' and 'H' individually. I then tried to input other letters and words. I then added numbers and puncuation marks to see if it stopped the user from continuting.
 ![image](assets/images/difficulty-test.png)
 ![image](assets/images/mayonaise.jpg)
 - Result: Adding anything but 'E', 'M' or 'H' did not continue the game. It tells the user that whatever they inputted is not a difficulty.
 - Verdict: Only the letters 'E', 'M' or 'H' selected the difficulty and continued with the game. So it was a success.
 
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+- Implenmentation: Making sure the user can only enter words that have the same number of letters that they are trying to guess and singular letters. The game should not continue if the users input contains any numbers, puncuation marks or any words has more or less than the word being guessed.
+- Test: I started the game, selected a difficulty and inputed words with numbers, words with puncuation marks and symbols and words that had more and less words than the guessed word.
+- Result: The game did not allow the user to add the wrong type of words and letters in the input section. It told the user why their input was incorrect.
+- Verdict: Only adding letters and words with the correct amount of letters carrired on with the game. So this was a success. 
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+- Inplenmentation: When the user accidently plays a word / letter that has already been guessed, they do not lose a try.
+- Test: Playing a game and duplicating different letters and words (that have the same number of letters that the mystery word has).
+- Result: The game pops up telling the user that they have already inputted that letter or word. No extra try has been lost.
+- Verdict: This was a success with no extra try and the infomation message telling the user what has happened appears.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+- Inplenmentation: When the user is stuck, they can type the word 'cheat' in the input, the user is given a letter to the mystery word in exchange for a life.
+- Test: I played a game and wrote cheat in the input and a letter appeared and a try was taken. I found a few letters using my brain power so most of the letters were filled in. I tried cheat again and a new letter appeared and took away a try.
+- Result: When the user types cheat, it always adds a new letter and always takes away a try.
+- Verdict: I feel that this is a success but it is very easy for the user to win by inputting cheat in every time. But I trust the users has morals and not take advantage of this...
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+- Inplenmentation: When the user wins the game a graffiti image that says "Well Done" appears.
+- Test: By winning as many games as I could. Seeing if the image popped up at the right place each time.
+- Result: Everytime the last letter of the mystery word was revealed, the image 'Well Done' popped up.
+- Verdict: It was a success. The process after I put in the final word was predictable.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+- Inplenmentation: When the user loses the game a graffiti image that says "Game Over" appears.
+- Test: By loseing as many games as I could. Seeing if the image popped up at the right place each time.
+- Result: Everytime the last try was lost, the image 'Game Over' popped up.
+- Verdict: It was a success. The process after losing the fianl try was predictable.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+- Implenmentation: When the user finishes the game whether they win or lose, the game asks them if they would like to play again. To answer the question, the user can input 'Y' for yes and it starts the game again or any other letter for no and the game will end.
+- Test: By finishing the game many times and restarting it using 'y' or any other letter at the end.
+- Results: When I finish a game, I inputted 'y' for yes and the game restarted. When I press 'n' the game ended.
+- Verdict: It was a success, pressing yes restarts the game, pressing no ends the game.
+
+
 ### Bugs
-The only issue I had with my game was that the graffiti title was too long for the game area, so half of it was hidden.
-To solve this, I moved the word 'Hangman' it was below the word 'Console'.
+- Cause: the graffiti title was too long for the game area, so half of it was hidden.
+- The graffiti length was too long
+- Resolution: To solve this, I moved the word 'Hangman' it was below the word 'Console'.
+
 
 ## Techologies 
 ### Languages

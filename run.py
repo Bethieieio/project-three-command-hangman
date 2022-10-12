@@ -258,7 +258,8 @@ def display_hangman(tries):
 def main():
     word = get_word()
     play(word)
-    while input("Play Again? Y/N ").upper() == "Y":
+    while input("Play Again? Enter 'Y' for YES"
+                "\n or any other letter for NO ").upper() == "Y":
         word = get_word()
         play(word)
 
