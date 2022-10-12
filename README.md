@@ -102,7 +102,7 @@ All of the stick figure's limbs were added and a bloody graffiti text appears th
 - Implementation: At the start of the game, the user selects the difficulty by entering 'E' for easy, 'M' for medium or 'H' for Hard. These three letters should be the only letters that allows the user to carry on with the game has it tells the game how many tries the user would like.
 - Test: To test this, I input the 'E', 'M' and 'H' individually. I then tried to input other letters and words. I then added numbers and puncuation marks to see if it stopped the user from continuting.
 ![image](assets/images/difficulty-test.png)
-![image](assets/images/mayonaise.jpg)
+![image](assets/images/mayonaise.png)
 - Result: Adding anything but 'E', 'M' or 'H' did not continue the game. It tells the user that whatever they inputted is not a difficulty.
 - Verdict: Only the letters 'E', 'M' or 'H' selected the difficulty and continued with the game. So it was a success.
 
