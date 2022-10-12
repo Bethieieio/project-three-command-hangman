@@ -19,6 +19,12 @@ The game can be found [here](https://console-hangman.herokuapp.com/)
 - As a user, I would like to know the answer at the end of the game if i get it incorrect.
 - As a user, I would like to know how many letters there are in the word I have to guess.
 - As a user, I would like to play the game as many times as I want.
+- As a user, I want to be able to cheat by entering cheat which will give me a letter and take a try.
+- As a user, I want to be able to select a difficulty which changes the amount of tries I start with.
+- As a user, I want to be able to see how many tries I have left.
+- As a user, when I submit an already submitted letter/word, I want to not lose a try and be told I've already made that guess.
+- As a user, I want to be able to replay the game once I've finished.
+- As a user, I would like to see a visual representation of the hangman.
 
 ### Site Aims
 - To provide a game thay runs smoohtly with no errors
